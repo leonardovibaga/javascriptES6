@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Valores por default en argumentos | Arreglos</title>
+	<script>
+	function agregar(valor, arreglo = []) {
+	  arreglo.push(valor);
+	  return arreglo;
+	}
+	console.log(agregar(1)); //[1]
+	console.log(agregar(2)); //[2], no [1, 2]
+</script>
+<style>
+</style>
+</head>
+<body>
+</body>
+</html>

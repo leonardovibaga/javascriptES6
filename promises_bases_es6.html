@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Promises</title>
+	<script>
+
+	let miPromesa = new Promise((resolve, reject)=>{
+		setTimeout(()=>{
+			resolve("Todo bien");
+		},1000);
+
+		setTimeout(()=>{
+			reject("Todo mal");
+		},1500);
+	})
+
+	miPromesa.then((res)=>{
+		console.log(res);
+	}, (err)=>{
+		console.log(err);
+	});
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Valores por default en argumentos | tipos primitivos</title>
+	<script>
+	//Pasamos tipos primitivos
+	function cambiaFondo(elemento, color = 'yellow') {
+	  var cuadro = document.getElementById(elemento);
+	  cuadro.style.backgroundColor = color;
+	}
+	window.onload = function(){
+	//cambiaFondo("cuadro");            // color configurado a 'yellow'
+	//cambiaFondo("cuadro", undefined); // color configurado a 'yellow' también
+	cambiaFondo("cuadro", 'blue');    // color configurado a 'blue'
+	}
+</script>
+<style>
+	#cuadro{
+		width:100px;
+		height: 100px;
+		border:1px solid black;
+	}
+</style>
+</head>
+<body>
+<div id="cuadro"></div>
+</body>
+</html>

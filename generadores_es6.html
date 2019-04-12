@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Generadores - Rangos</title>
+    <script>
+      function* rango (inicio, fin, incremento){
+        while (inicio < fin) {
+          yield inicio
+          inicio+= incremento
+        }
+      }
+      for (let i of rango(0,10,2)){
+        console.log(i)
+      }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

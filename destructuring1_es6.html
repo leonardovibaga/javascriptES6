@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Destructuring</title>
+	<meta charset="utf-8">
+	<script>
+		let modulo = {
+		  cuadrado(lon) { console.log(lon*lon);},
+		  circulo(radio) { console.log(radio*Math.PI); },
+		  texto(text) { console.log(text); },
+		};
+		let {cuadrado, texto, circulo} = modulo;
+		cuadrado(5);
+		texto('hola');
+		circulo(10);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

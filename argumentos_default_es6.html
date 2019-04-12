@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Valores por default en argumentos</title>
+	<script>
+		//ES5
+		function multiplicar(a, b) {
+		  b = typeof b !== 'undefined' ?  b : 1;
+		  return a*b;
+		}
+
+		console.log(multiplicar(5)); // 5
+
+		//ES6
+		function multiplicar(a, b = 1) {
+		  return a*b;
+		}
+
+		console.log(multiplicar(5)); // 5
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

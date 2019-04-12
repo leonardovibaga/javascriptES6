@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Promises</title>
+	<script>
+
+	let miPrimeraPromesa = new Promise((resolve, reject)=>{
+		setTimeout(()=>{
+			resolve("Promesa1 - Todo bien");
+		},1000);
+	})
+
+	let miSegundaPromesa = new Promise((resolve,reject)=>{
+		setTimeout(()=>{
+			reject("Promesa2 - Todo bien")
+		},500);
+	});
+
+	Promise.all([miPrimeraPromesa,  miSegundaPromesa])
+		.then((data)=>{
+			console.log(data);
+		})
+		.catch((err)=>{
+			console.log(err);
+		});
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Destructuring</title>
+	<meta charset="utf-8">
+	<script>
+		let juana = { nombre: 'Juana', paterno: 'Pérez'};
+		let juan = { nombre: 'Juan', paterno: 'López', materno: 'Pérez' }
+		function nombreCompleto({nombre, paterno, materno = 'N/A'}) {
+		  console.log(`Hola ${nombre} ${paterno} ${materno}`)  
+		}
+		nombreCompleto(juana) // -> Hola Juana Pérez N/A
+		nombreCompleto(juan) // -> Hola Juan López Pérex
+	</script>
+</head>
+<body>
+
+</body>
+</html>

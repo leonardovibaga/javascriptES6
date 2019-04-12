@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clases</title>
+	<script>
+		class Rectangulo {
+		  constructor(base, altura) {
+		    this.base = base;
+		    this.altura = altura;
+		  }
+ 
+		  calcArea() {
+		    return this.base * this.altura;
+		  }
+		}
+ 
+		var r = new Rectangulo(5, 10);
+		alert(r.calcArea()); // 50
+	</script>
+</head>
+<body>
+
+</body>
+</html>
